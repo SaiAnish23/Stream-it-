@@ -24,7 +24,7 @@ const KeysPage = async () =>{
 
     return (
         <div
-        className="p-6"
+        className="p-6 text-white"
         >
 
             <div

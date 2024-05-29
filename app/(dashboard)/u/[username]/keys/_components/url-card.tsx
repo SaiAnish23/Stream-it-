@@ -12,7 +12,7 @@ export const UrlCard = ({ value }: UrlCardProps) => {
       <div className="flex items-center gap-x-10">
         <p className="font-semibold shrink-0">Server URL</p>
         <div className="space-y-2 w-full">
-          <div className="w-full flex items-center gap-x-2">
+          <div className="w-full flex items-center gap-x-2 text-black">
             <Input value={value || ""} disabled placeholder="Server URL" />
             <CopyButton value={value || ""} />
           </div>
