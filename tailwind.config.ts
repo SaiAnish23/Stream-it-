@@ -1,7 +1,9 @@
 import type { Config } from "tailwindcss";
 import { nextui } from "@nextui-org/react";
+import { withUt } from "uploadthing/tw";
 
-const config: Config = {
+
+const config: Config = withUt({
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -19,5 +21,5 @@ const config: Config = {
     },
   },
   plugins: [require("daisyui"), nextui()],
-};
+});
 export default config;
