@@ -23,7 +23,7 @@ const BrowseLayout = ({ children }: { children: React.ReactNode }) => {
           <Sidebar />
         </Suspense> */}
 
-        <div className="flex h-full pt-20 mt-[-80px]">
+        <div className="flex h-screen pt-20 mt-[-80px] w-full">
           <Container>{children}</Container>
         </div>
       </div>

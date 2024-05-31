@@ -1,6 +1,16 @@
-import Image from "next/image";
-import { UserButton } from "@clerk/nextjs";
+import { Suspense } from "react";
+
+import { Results, ResultsSkeleton } from "./_components/result";
 
 export default function Page() {
-  return <div className="text-white ">HOME</div>;
+  return (
+    <div className="h-full p-8 max-w-screen-2xl mx-auto text-white">
+      {/* {/* <Suspense fallback={<ResultsSkeleton />}> */}
+      {/* </Suspense> */}
+      
+
+      <Results />
+
+    </div>
+  );
 }
